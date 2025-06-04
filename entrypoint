@@ -12,8 +12,8 @@ v2board:
   apiKey: ${apiKey}
   nodeID: ${nodeID}
 tls: 
-  cert: domain.crt
-  key: priv.key
+  cert: /etc/hysteria/domain.crt
+  key: /etc/hysteria/priv.key
 obfs:
   type: salamander 
   salamander:
