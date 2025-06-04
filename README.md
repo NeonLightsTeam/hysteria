@@ -43,9 +43,9 @@ docker run -itd --restart=always  --network=host \
  -e apiKey=xxxxxxxxxxxxxxxxxxxxx \
  -e domain=hy2.example.com  \
  -e nodeID=1 \
-ghcr.io/NeonLightsTeam/hysteria:latest
+ghcr.io/neonlightsteam/hysteria:latest
 ```
 ### docker 仓库
 ```
-docker pull ghcr.io/NeonLightsTeam/hysteria:latest
+docker pull ghcr.io/neonlightsteam/hysteria:latest
 ```
