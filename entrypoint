@@ -11,14 +11,20 @@ v2board:
   apiHost: ${apiHost}
   apiKey: ${apiKey}
   nodeID: ${nodeID}
-acme:
-  domains:
-    - ${domain}
-  email: your@email.com
+tls: 
+  cert: domain.crt
+  key: priv.key
+obfs:
+  type: salamander 
+  salamander:
+    password: ${obfsPassword}
 auth:
   type: v2board
 trafficStats:
   listen: 127.0.0.1:7653
+bandwidth:
+  up: ${uploadSpeed} mbps
+  down: ${downloadSpeed} mbps
 acl:
   inline:
     - reject(10.0.0.0/8)
