@@ -37,13 +37,15 @@ acl:
 ### 快速启动
 ```
 docker run -itd --restart=always  --network=host \
- -e apiHost=https://example.com \
+ -e uploadSpeed=1000 \
+ -e downloadSpeed=1000 \
+ -e obfsPassword=hysteria2
  -e apiKey=xxxxxxxxxxxxxxxxxxxxx \
  -e domain=hy2.example.com  \
  -e nodeID=1 \
-ghcr.io/cedar2025/hysteria:latest
+ghcr.io/NeonLightsTeam/hysteria:latest
 ```
 ### docker 仓库
 ```
-docker pull ghcr.io/cedar2025/hysteria:latest
+docker pull ghcr.io/NeonLightsTeam/hysteria:latest
 ```
