@@ -7,7 +7,6 @@ if [ ! -f "$CONFIG_FILE" ]; then
     echo "Creating configuration file $CONFIG_FILE"
     mkdir -p /etc/hysteria
     cat <<EOF >"$CONFIG_FILE"
-listen: :${port}
 v2board:
   apiHost: ${apiHost}
   apiKey: ${apiKey}

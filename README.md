@@ -39,7 +39,6 @@ docker run -itd --restart=always  --network=host \
  -e apiKey=xxxxxxxxxxxxxxxxxxxxx \
  -e domain=hy2.example.com  \
  -e nodeID=1 \
- -e port=443
 ghcr.io/neonlightsteam/hysteria:latest
 ```
 ### docker 仓库
